@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDN - Compagnia Damocles</title>
+    <link rel="icon" type="image/png" href="/img/cd/logo.png">
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        :root {
+            --bg-dark: #0D1117;
+            --bg-light-dark: #161B22;
+            --border-color: #30363d;
+            --primary-blue: #00A9FF;
+            --primary-blue-hover: #58caff;
+            --text-primary: #f0f6fc;
+            --text-secondary: #aeb8c5;
+            --font-main: 'Poppins', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        a {
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        /* --- 2. LAYOUT E UTILITIES (ESSENZIALI) --- */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            width: 100%;
+        }
+
+        /* Contenitore principale che centra il contenuto */
+        .main-content {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .logo {
+            max-width: 250px;
+            height: auto;
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-blue);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            max-width: 700px;
+            margin: 1rem auto 2.5rem auto;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        /* --- 3. BOTTONI (ESSENZIALI) --- */
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-blue);
+            color: var(--bg-dark);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-blue-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 169, 255, 0.2);
+        }
+
+        /* --- 4. FOOTER (MINIMALE) --- */
+        .footer {
+            background-color: var(--bg-light-dark);
+            border-top: 1px solid var(--border-color);
+            padding: 25px 0;
+            font-size: 0.9rem;
+            color: #6e7681;
+            text-align: center;
+        }
+        
+        .footer a {
+            color: var(--text-secondary);
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: var(--primary-blue);
+        }
+
+        /* --- 5. RESPONSIVE --- */
+        @media (max-width: 768px) {
+            .section-title { font-size: 2.2rem; }
+            .section-subtitle { font-size: 1rem; }
+        }
+
+        .sub-footer {
+            display: flex;                         
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: #6e7681;
+        }
+
+    </style>
+</head>
+<body>
+
+    <main class="main-content">
+        <div class="container">
+            
+
+            <img src="/img/cd/logo.png" alt="Logo" class="logo" style="max-height: 5rem;">
+            
+            <h1 class="section-title">Area Tecnica CDN</h1>
+            
+            <p class="section-subtitle">
+                Questo è il server CDN (Content Delivery Network) della <strong>Compagnia Damocles</strong>.<br>
+                La sua funzione è distribuire in modo rapido e sicuro le risorse (immagini, script e file) per i nostri servizi.
+            </p>
+
+            <p class="section-subtitle" style="margin-bottom: 2.5rem;">
+                Non c'è molto altro da vedere qui. Questo dominio è utilizzato esclusivamente per scopi tecnici.
+            </p>
+            
+            <a href="https://www.compagniadamocles.it/" class="btn btn-primary">
+                Torna al Sito Principale
+            </a>
+
+        </div>
+    </main>
+
+<footer class="footer">
+    <div class="container">
+        
+
+
+        <div class="sub-footer">
+            <div class="copyright">
+                © 2025 Compagnia Damocles. Tutti i diritti riservati.
+            </div>
+            <div class="credits">
+                Sviluppato da <a href="https://adinpisica.it" target="_blank">Adin Pisica</a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
